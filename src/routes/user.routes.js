@@ -11,7 +11,7 @@ router.get('/users', userController.findAllUserController)
 
 router.get('/users/:id', validateUserId, userController.findUserByIdControlle)
 
-router.put('/users/:id', validateUserId, validate(userSchema), userController.updateUserController)
+router.patch('/users/:id', validateUserId, userController.updateUserController)
 
 router.delete('/users/:id', validateUserId, userController.deleteUserController);
 
