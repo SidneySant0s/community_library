@@ -1,5 +1,4 @@
 import bookServices from "../service/book.services.js";
-import loanService from "../service/loan.service.js";
 
 async function createBookController(req, res) {
     const newBook = req.body;
